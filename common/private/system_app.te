@@ -1,2 +1,7 @@
 # Read selinux status
 allow system_app selinuxfs:file r_file_perms;
+
+get_prop(system_app, theme_prop)
+# Allow theme_prop to be read and set by Settings
+set_prop(system_app, theme_prop)
+
